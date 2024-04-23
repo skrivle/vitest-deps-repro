@@ -1,0 +1,19 @@
+{
+    "extends": "@tsconfig/node20/tsconfig.json",
+    "compilerOptions": {
+        "types": ["vitest/globals"],
+        "module": "ES2022",
+        "moduleResolution": "Bundler",
+        "noImplicitAny": false,
+        "outDir": "build",
+        "baseUrl": ".",
+        "paths": {
+            "@lib/*": ["./src/libs/*"],
+            "@data-sources/*": ["./src/data-sources/*"],
+            "@services/*": ["./src/services/*"],
+            "@resolvers/*": ["./src/resolvers/*"],
+            "@constants/*": ["./src/constants/*"]
+        }
+    },
+    "exclude": ["node_modules", "consumers"]
+}

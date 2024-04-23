@@ -1,0 +1,11 @@
+{
+    "name": "test-package",
+    "version": "18.2.0",
+    "description": "Brand checking of React Elements.",
+    "main": "index.js",
+    "type": "module",
+    "license": "MIT",
+    "peerDependencies": {
+        "graphql": "^16.6.0"
+    }
+  }

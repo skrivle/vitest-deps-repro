@@ -1,0 +1,21 @@
+{
+  "name": "repro",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Jelle Versele <jelle@versele.be>",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "postinstall": "rm -rf node_modules/test-package && cp -R ./test-package node_modules/test-package",
+    "test": "vitest run",
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "graphql": "16.8.1"
+  },
+  "devDependencies": {
+    "@tsconfig/node20": "20.1.4",
+    "typescript": "5.4.5",
+    "vitest": "1.5.0"
+  }
+}
